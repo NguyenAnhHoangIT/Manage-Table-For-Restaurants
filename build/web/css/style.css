@@ -1,0 +1,184 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 17, 2024, 9:19:40 AM
+    Author     : Admin
+*/
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #170F23;
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    margin-top: 40px;
+}
+
+aside {
+    width: 10%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #231B2E;
+    box-shadow: 0px 2px 3px #9B9B9B;
+    gap: 10px;
+    padding: 10px 0px 10px 0px;
+    margin: 20px;
+}
+
+.tab_content {
+    width: 80%;
+    min-height: 80vh;
+    float: right;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+menu {
+    width: 30%;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px #9B9B9B;
+    background-color: #fff;
+    display: flex;
+}
+
+header menu ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header menu ul li a {
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+    color: #c23564;
+}
+
+header menu ul li {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    color: #c23564;
+    background-color: #fff;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 6px 0px 2px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+header menu ul li:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+header menu ul .on {
+    opacity: 1;
+    border-bottom: 5px solid;
+}
+
+.tab_item {
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background: #fff;
+    box-shadow: 0px 2px 3px rgba(194, 53, 100, 0.5);
+}
+.tab_item:hover {
+    color: rgba(194, 53, 100, 0.3);
+}
+.choose {
+    box-shadow: inset 0px -1px 10px rgba(194, 53, 100, 0.6);
+}
+
+.tab_pane {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.tab_grid_item {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 110px;
+}
+
+.status {
+    width: 100%;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.detail_con {
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.red {
+    color: #FF0000;
+}
+.green {
+    color: #79B930;
+}
+.hide {
+    display: none;
+}
+.btn_return {
+    height: 100%;
+    float: left;
+    margin: 5px 20px 0px 5px;
+    border: 2px solid black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.return_con {
+    width: 10px;
+    aspect-ratio: 1/1;
+}
+.btn_return:hover {
+    box-shadow: inset 0px 0px 5px #c23564 ;
+}
+.active {
+    color: #c23564;
+    box-shadow: none;
+}

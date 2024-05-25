@@ -1,0 +1,200 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 19, 2024, 11:58:13 AM
+    Author     : Admin
+*/
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #170F23;
+}
+menu {
+    width: 30%;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px #9B9B9B;
+    background-color: #fff;
+    display: flex;
+}
+header {
+    width: 100%;
+    height: fit-content;
+}
+header menu ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header menu ul li a {
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+    color: #c23564;
+}
+
+header menu ul li {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    color: #c23564;
+    background-color: #fff;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 6px 0px 2px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+header menu ul li:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+header menu ul .on {
+    opacity: 1;
+    border-bottom: 5px solid;
+}
+main {
+    width: 100%;
+    height: 70vh;
+}
+
+.con_con {
+    width: 70%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.add_con {
+    width: 30%;
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #252836;
+    display: none;
+}
+.drinks_con {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-evenly;
+}
+.drink {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.drink:hover {
+    box-shadow: 0px 3px 1px #B67DE8;
+}
+.back_ground {
+    background-color: #252836;
+    border-radius: 15px;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.drink_name {
+    color: #9B4DE0;
+}
+
+.drink_cost {
+    color: #fff;
+}
+.them_con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    background: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.them_bg {
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #9B4DE0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.them_bg:hover {
+    box-shadow: 0px 0px 15px rgb(155,77,224);
+}
+.frm {
+    width : 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+.frm div {
+    width: 100%;
+}
+.frm div label {
+    color: #9B4DE0;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+.frm input {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.se {
+    width: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.frm button {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background: rgb(194,53,100);
+    background: linear-gradient(45deg, rgba(194,53,100,1) 0%, rgba(179,105,135,1) 29%, rgba(149,83,145,1) 46%, rgba(165,89,186,1) 69%, rgba(155,77,224,1) 100%);
+}
+.visible {
+    display: block;
+}
